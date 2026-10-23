@@ -1,0 +1,76 @@
+
+.employee-management-page {
+  min-height: 100vh;
+  padding: 28px;
+  background: #f5f7fa;
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+
+    h1 {
+      margin: 0 0 8px;
+      color: #1f2937;
+      font-size: 27px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 14px;
+    }
+  }
+
+  .summary-card {
+    position: relative;
+    height: 120px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+
+    .v-card-text {
+      padding: 20px;
+    }
+
+    .summary-label {
+      color: #6b7280;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .summary-value {
+      color: #1f2937;
+      font-size: 21px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .v-icon {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+    }
+  }
+
+  .dialog-title {
+    padding: 22px 24px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 600px) {
+  .employee-management-page {
+    padding: 16px;
+
+    .page-header h1 {
+      font-size: 23px;
+    }
+  }
+}

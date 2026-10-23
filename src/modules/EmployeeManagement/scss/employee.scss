@@ -1,0 +1,124 @@
+.employee-management-page {
+  min-height: 100vh !important;
+  padding: 32px !important;
+  background: #f3f6fa !important;
+}
+
+.employee-management-page .page-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+  margin-bottom: 28px !important;
+}
+
+.employee-management-page .summary-card,
+.employee-management-page .employee-table-card {
+  background: #fff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+}
+
+.employee-management-page .dialog-title {
+  padding: 20px 24px !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+
+.employee-management-page .page-header .v-btn {
+  background: #0c9488 !important;
+  color: #fff !important;
+  text-transform: none !important;
+}
+
+@media (max-width: 600px) {
+  .employee-management-page {
+    padding: 16px !important;
+  }
+}
+
+/* Add Employee dialog heading */
+.add-employee__title {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 600;
+  color: #f0fdfa;
+  background-color: #424a4a;
+}
+
+/* Dialog content spacing */
+.add-employee__title + .v-divider {
+  border-color: #0c9488;
+}
+
+
+/* View Employee dialog heading */
+.view-employee__title {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 600;
+  color: #f0fdfa;
+  background-color: #424a4a;
+}
+
+/* Employee profile section */
+.view-employee__profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+
+  h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f0fdfa;
+  }
+}
+
+/* Employee details list */
+.view-employee__list {
+  background: transparent;
+
+  .v-list-item {
+    padding-inline: 8px;
+  }
+}
+
+
+/* Delete dialog heading */
+.delete-employee__title {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  font-weight: 600;
+  color: #dc2626;
+  background-color: #fef2f2;
+}
+
+/* Confirmation content */
+.delete-employee__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: #f0fdfa;
+    line-height: 1.6;
+  }
+
+  strong {
+    color: #fef2f2;
+  }
+
+  .v-alert {
+    width: 100%;
+    text-align: left;
+  }
+}

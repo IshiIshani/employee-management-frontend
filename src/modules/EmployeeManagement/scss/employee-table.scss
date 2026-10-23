@@ -1,0 +1,114 @@
+.employee-table-card {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 24px 12px;
+}
+
+.table-heading h2 {
+  margin: 0 0 6px;
+  color: #1e293b;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.table-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.table-search {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 24px 20px;
+}
+
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.employee-table {
+  width: 100%;
+  min-width: 1450px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.employee-table thead {
+  background: #f1f5f9;
+}
+
+.employee-table th {
+  padding: 14px 16px;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.employee-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #edf0f4;
+  color: #475569;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.employee-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.employee-table .employee-name {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.employee-table .salary-value {
+  color: #0f766e;
+  font-weight: 500;
+}
+
+.actions-heading {
+  text-align: center;
+}
+
+.employee-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.empty-table {
+  padding: 36px 16px !important;
+  color: #64748b !important;
+  text-align: center;
+}
+
+.empty-table p {
+  margin: 8px 0 0;
+}
+
+@media (max-width: 600px) {
+  .table-heading {
+    align-items: flex-start;
+    padding: 18px 16px 12px;
+  }
+
+  .table-search {
+    padding: 12px 16px 16px;
+  }
+}
